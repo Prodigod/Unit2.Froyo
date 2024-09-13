@@ -8,7 +8,7 @@ let froyoResult = prompt(
  //prompt userInput to create indexes.
  
  
-    //store the user input into an array 
+    //store the user input into an array, convert to string array with split and comma.
     //then print the indexes to console.
 let froyoArray = froyoResult.split(",");   
 console.log(froyoArray);  
@@ -19,9 +19,10 @@ console.log(output)
     
 }
 
-let countFlavors = {};
+
 
 function observed(froyoArray) {
+let countFlavors = {};
 for (let i = 0; i < froyoArray.length; i++) {
    let flavor = froyoArray[i]
     if (flavor in countFlavors) {
